@@ -224,14 +224,17 @@ main{
     background-repeat: no-repeat;
 }
 
+section{
+    h2{
+        color: $color1;
+        font-size: 28px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+}
+
 .info-corpo1{
     padding: 20px;
-
-        h2{
-            color: $color1;
-            font-size: 28px;
-            padding-top: 15px;
-        }
 
         h4{
             color: $color1;

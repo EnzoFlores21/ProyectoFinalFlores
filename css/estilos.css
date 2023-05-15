@@ -186,13 +186,15 @@ main p {
   background-repeat: no-repeat;
 }
 
-.info-corpo1 {
-  padding: 20px;
-}
-.info-corpo1 h2 {
+section h2 {
   color: #292d34;
   font-size: 28px;
-  padding-top: 15px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.info-corpo1 {
+  padding: 20px;
 }
 .info-corpo1 h4 {
   color: #292d34;
@@ -425,6 +427,95 @@ main p {
   border: 2px solid #c1b3e3;
   color: #ecf2f8;
   font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .navbar-brand {
+    font-size: 28px !important;
+    padding-left: 20px;
+  }
+  .navbar-expand-sm .navbar-collapse {
+    display: flex !important;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+  .navbar-expand-sm .navbar-collapse .navbar-nav {
+    gap: 12px;
+  }
+  .navbar-expand-sm .navbar-collapse a {
+    font-size: 20px;
+  }
+  .banner {
+    height: 450px;
+  }
+  .banner .banner_info {
+    padding-top: 200px;
+  }
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+    height: 2600px;
+  }
+  .productos .card {
+    height: 600px;
+    border-radius: 10px;
+  }
+  .productos .info-card {
+    padding-top: 10px;
+  }
+  .productos p {
+    height: 116px;
+  }
+  main {
+    height: 1000px;
+  }
+  main .img-nosotros {
+    height: 450px;
+    background-position: top;
+  }
+  main h3 {
+    margin-top: 40px;
+    font-weight: bold;
+  }
+  main p {
+    font-size: 19px;
+    line-height: 40px;
+    margin-top: 40px;
+  }
+  .servicios-banner {
+    height: 450px;
+  }
+  .servicios-banner .banner-servicios {
+    padding-top: 200px;
+  }
+  .info-servicios h3 {
+    padding-top: 40px;
+  }
+  .info-servicios p {
+    line-height: 40px;
+  }
+  .servicios-precios {
+    height: 700px;
+    background: linear-gradient(#c1b3e3, #ecf2f8);
+  }
+  .contenedor-precios {
+    display: flex;
+    padding-top: 50px;
+    gap: 10px;
+  }
+  .contenedor-precios .precio {
+    height: 420px;
+  }
+  .img-corporativo {
+    height: 450px;
+  }
+  .banner-contacto {
+    height: 450px;
+  }
+  .maps {
+    padding: 20px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
