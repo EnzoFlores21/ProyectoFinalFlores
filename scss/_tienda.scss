@@ -1,0 +1,65 @@
+// TIENDA
+.productos{
+    background-color: $color1;
+    height: 4800px;
+    padding-top: 30px;
+
+    .card{
+        background-color: $color2;
+        width: 90%;
+        margin: 0 auto;
+        height: 560px;
+        margin-bottom: 30px;
+        border-radius: 12px;
+        padding: 8px;
+        box-shadow: 0 0 4px $color1;
+
+            img{
+                height: 300px;
+                width: 80%;
+                margin: 0 auto;
+                padding-top: 24px;
+                object-fit: contain;
+            }
+
+            h2{
+                color: $color1;
+                text-align: center;
+                padding-top: 12px;
+            }
+
+            p{
+                color: $color1;
+                text-align: center;
+                padding-top: 20px;
+            }
+
+            a{
+                background-color: $color3;
+                width: 50%;
+                border: none;
+            }
+
+            a:hover{
+                background-color: $color3;
+                color: $color1;
+                transform: scale(1.10);
+                transition: all 1s;
+                font-weight: bold;
+                border-radius: 12px;
+            }
+
+            strong{
+                font-size: 22px;
+                padding-right: 12px;
+            }
+    }
+
+    .info-card{
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+        align-items: center;
+        gap: 6px;
+    }
+}

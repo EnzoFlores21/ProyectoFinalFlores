@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+// VARIABLES
+$color1: #292d34;
+$color2: #ecf2f8;
+$color3: #c1b3e3;
+$fuenteprincipal: font-family 'Ubuntu', sans-serif !important;
+
+
+//HEADER
+.navbar{
+    background-color: $color1;
+    align-items: center;
+
+    .fixed-top{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .navbar-brand{
+        color: $color2;
+        font-size: 22px;
+        font-weight: bold;
+
+        span{
+            color: $color3;
+        }
+    }
+
+    .navbar-toggler{
+        color: $color3;
+        font-size: 28px;
+        border: none;
+    }
+
+    .nav-link{
+        color: $color2;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .nav-link:hover{
+        color: $color3;
+    }
+}
+
+// BANNER
+.banner{
+    width: 100%;
+    height: 350px;
+    background-image: url(../img/tienda.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .banner_info{
+        text-align: center;
+        padding-top: 150px;
+
+            h1{
+                color: $color2;
+                font-weight: bold;
+            }
+
+            a{
+                background-color: $color3;
+                color: $color2;
+                font-weight: bold;
+                margin-top: 12px;
+                border: none;
+            }
+
+            a:hover{
+                transform: scale(1.35);
+                transition: all 1s;
+                background-color: $color3;
+                color: $color1;
+            }
+    }
+}
+
+// FOOTER
+footer{
+    background-color: $color1;
+    height: 325px;
+
+    .fila{
+        padding-top: 25px;
+
+        ul{
+            list-style-type: none;
+        }
+
+        li{
+            color: $color2;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        a{
+            color: $color2;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: $color3;
+        }
+    }
+}
+
+// NOSOTROS
+main{
+    background: linear-gradient($color3,$color2);
+    height: 800px;
+
+    .img-nosotros{
+        background-image: url(../img/nosotros.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 350px;
+    }
+
+        h3{
+            color: $color1;
+            text-align: center;
+            padding-top: 50px;
+            font-size: 22px;
+            text-transform: uppercase;
+            padding-bottom: 20px;
+        }
+
+    .info-nosotros{
+        background-color: $color2;
+        width: 80%;
+        height: 400px;
+        margin: 0 auto;
+        border-radius: 12px;    
+    }
+
+        p{
+                color: $color1;
+                text-align: center;
+                padding: 20px;
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 32px;
+            }
+}
+
+// SERVICIOS
+.servicios-banner{
+    background-image: url(../img/servicios.webp);
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .banner-servicios{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 150px;
+    }
+
+    h2{
+        text-align: center;
+        color: $color2;
+        font-weight: bold;
+    }
+
+    a{
+        background-color: $color3;
+        border: none;
+        margin-top: 18px;
+        width: 50%;
+    }
+
+    a:hover{
+        background-color: $color3;
+        color: $color1;
+        transform: scale(1.14);
+        transition: all 1s;
+        font-weight: bold;
+    }
+}
+
+.info-servicios{
+    background-color: $color1;
+    height: 720px;
+    padding: 12px;
+
+        h3{
+            text-align: center;
+            padding-top: 20px;
+            color: $color3;
+        }
+
+        p{
+            text-align: center;
+            padding: 20px;
+            width: 90%;
+            margin: 0 auto;
+            color: $color3;
+            font-size: 18px;
+            line-height: 30px;
+        }
+}
+
+// CORPORATIVO
+.img-corporativo{
+    background-image: url(../img/banner_corp2.webp);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info-corpo1{
+    padding: 20px;
+
+        h2{
+            color: $color1;
+            font-size: 28px;
+            padding-top: 15px;
+        }
+
+        h4{
+            color: $color1;
+            padding-top: 12px;
+            font-weight: bold;
+        }
+
+        p{
+            color: $color1;
+            line-height: 30px;
+            padding-top: 12px;
+        }
+
+        img{
+            object-fit: cover;
+            height: 300px;
+        }
+}
+
+.info-corpo2{
+    padding: 20px;
+
+        h4{
+            color: $color1;
+            font-weight: bold;
+        }
+
+        p{
+            color: $color1;
+            line-height: 30px;
+            padding-top: 12px;
+        }
+
+        img{
+            object-fit: cover;
+            height: 300px;
+            max-width: 100%;
+        }
+}
+
+.info-corpo3{
+    padding: 20px;
+
+        h4{
+            color: $color1;
+            font-weight: bold;
+            font-size: 21px;
+        }
+
+        p{
+            color: $color1;
+            line-height: 30px;
+            padding-top: 12px;
+        }
+
+        img{
+            object-fit: cover;
+            height: 300px;
+        }
+}
+
+// CONTACTO
+.banner-contacto{
+    background-image: url(../img/img\ contact.webp);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenedor-contacto{
+    background-color: $color1;
+    height: 700px;
+    width: 100%;
+
+        h2{
+            color: $color3;
+            text-align: center;
+            padding: 40px;
+            font-weight: bold;
+            font-size: 28px;
+        }
+
+        form{
+            background-color: $color1;
+            width: 90%;
+            height: 550px;
+            margin: 0 auto;
+            border-radius: 12px;
+        }
+
+    .campo{
+        padding: 6px;
+    }
+
+    .campo_name{
+        color: $color3;
+        font-size: 18px;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-top: 12px;
+    }
+
+    .campo_input{
+        width: 90%;
+        margin-left: 15px;
+        border: none;
+        box-shadow: 0 0 2px $color1;
+        padding: 5px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+        a{
+            background-color: $color3;
+            border: none;
+            width: 90%;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        a:hover{
+            background-color: $color3;
+            color: $color1;
+            transform: scale(1.05);
+            transition: all 0.6s;
+        }
+}
+
+.maps{
+    background-color: $color1;
+    height: 400px;
+    padding-top: 20px;
+
+    iframe{
+        width: 80%;
+        margin-left: 40px;
+        height: 320px;
+    }
+}
+
+@import "_tienda.scss";
+@import "_precios.scss";
+@import "_media.scss";
