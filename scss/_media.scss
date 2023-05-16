@@ -111,3 +111,79 @@
         padding: 20px;
     }
 }
+
+@media (min-width: 1024px){
+    .navbar{
+        height: 120px;
+    }
+
+    .banner{
+        height: 500px;
+
+        .banner_info{
+            padding-top: 250px;
+        }
+    }
+
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        height: 2000px;
+        gap: 8px;
+
+        .card8{
+            .info-card{
+                padding-top: 40px;
+            }
+        }
+    }
+
+    main{
+        .img-nosotros{
+            height: 500px;
+            background-position: top;
+        }
+    }
+
+    .servicios-banner{
+        height: 500px;
+
+        .banner-servicios{
+            padding-top: 240px;
+        }
+    }
+
+    .img-corporativo{
+        height: 500px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .maps{
+        iframe{
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (min-width: 1280px){
+    .banner-contacto{
+        height: 500px;
+    }
+
+    form{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .maps{
+        padding-top: 50px;
+    }
+}
